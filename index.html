@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DONE COGEL App</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0a0f1c;
+color:#e5e7eb;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#0f172a;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#60a5fa;
+font-weight:bold;
+}
+
+/* HAMBURGER */
+.menu-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* NAV */
+nav{
+display:flex;
+gap:15px;
+}
+
+nav a{
+color:#cbd5e1;
+text-decoration:none;
+}
+
+/* MOBILE MENU */
+@media(max-width:768px){
+nav{
+display:none;
+flex-direction:column;
+background:#111827;
+position:absolute;
+top:60px;
+right:10px;
+padding:10px;
+border-radius:10px;
+}
+
+nav.show{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:70px 20px;
+animation:fadeIn 1s ease;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#2563eb;
+color:white;
+border-radius:10px;
+text-decoration:none;
+}
+
+/* CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:#111827;
+padding:18px;
+border-radius:12px;
+text-align:center;
+border:1px solid #1f2937;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+.section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* CONTACT */
+.box{
+background:#111827;
+padding:20px;
+border-radius:12px;
+display:inline-block;
+}
+
+.wa{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#22c55e;
+color:white;
+border-radius:8px;
+text-decoration:none;
+}
+
+/* BOTTOM NAV (MOBILE APP STYLE) */
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:#0f172a;
+display:flex;
+justify-content:space-around;
+padding:10px;
+border-top:1px solid #1f2937;
+}
+
+.bottom-nav a{
+color:#cbd5e1;
+text-decoration:none;
+font-size:12px;
+text-align:center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20
