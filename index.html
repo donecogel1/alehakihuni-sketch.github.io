@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DONE COGEL | Pencairan Saldo PayPal</title>
+
+
+
+<style>
+
+body {
+
+    margin:0;
+
+    font-family:Arial, sans-serif;
+
+    background:#f4f6f9;
+
+}
+
+header {
+
+    background:linear-gradient(90deg,#0070ba,#005ea6);
+
+    color:white;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.container {
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+.card {
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+h2 {
+
+    margin-top:0;
+
+}
+
+.badge {
+
+    display:inline-block;
+
+    background:#e6f2ff;
+
+    color:#0070ba;
+
+    padding:6px 10px;
+
+    border-radius:6px;
+
+    margin:5px;
+
+    font-size:12px;
+
+}
+
+input, select {
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+
+button {
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#0070ba;
+
+    color:white;
+
+}
+
+.wa {
+
+    display:block;
+
+    text-align:center;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    margin-top:10px;
+
+}
+
+.testimoni {
+
+    background:#f9fafb;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+}
+
+footer {
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#777;
+
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<header>
+
+<h1>DONE COGEL</h1>
+
+<p>Pencairan Saldo PayPal Aman & Terpercaya</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+<h2>Deskripsi</h2>
+
+<p>Menyediakan pencairan saldo PayPal ke rekening bank dan e-wallet dengan proses cepat, aman, dan terpercaya.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Keunggulan</h2>
+
+<span class="badge">✔ Aman</span>
+
+<span class="badge">✔ Proses Cepat</span>
+
+<span class="badge">✔ Terpercaya</span>
+
+<span class="badge">✔ Support</span>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Pencairan</h2>
+
+<ul>
+
+<li>Ke Rekening Bank Lokal</li>
+
+<li>Ke DANA / OVO / GoPay</li>
+
+<li>Proses cepat & aman</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Form Pencairan</h2>
+
+
+
+<input type="text" id="nama" placeholder="Nama Anda">
+
+<input type="number" id="saldo" placeholder="Jumlah Saldo ($)">
+
+<select id="metode">
+
+<option>Transfer Bank</option>
+
+<option>DANA</option>
+
+<option>OVO</option>
+
+<option>GoPay</option>
+
+</select>
+
+
+
+<button onclick="kirimData()">Kirim ke WhatsApp</button>
+
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Testimoni</h2>
+
+
+
+<div class="testimoni">
+
+"Proses cepat dan aman 👍"
+
+</div>
+
+
+
+<div class="testimoni">
+
+"Sudah sering pakai, terpercaya"
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Kontak</h2>
+
+<p>WhatsApp: 088274325328</p>
+
+
+
+<a class="wa" href="https://wa.me/6288274325328" target="_blank">
+
+Chat WhatsApp
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+
+© 2026 DONE COGEL
+
+</footer>
+
+
+
+<script>
+
+function kirimData() {
+
+    var nama = document.getElementById("nama").value;
+
+    var saldo = document.getElementById("saldo").value;
+
+    var metode = document.getElementById("metode").value;
+
+
+
+    var pesan = "Halo DONE COGEL,%0A"
+
+        + "Saya ingin mencairkan saldo PayPal:%0A%0A"
+
+        + "Nama: " + nama + "%0A"
+
+        + "Saldo: $" + saldo + "%0A"
+
+        + "Metode: " + metode;
+
+
+
+    window.open("https://wa.me/6288274325328?text=" + pesan, "_blank");
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
